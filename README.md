@@ -8,8 +8,8 @@
 |password|string|null: false|
 
 ## Association
-- has_many :groups
 - has_many :groups_users
+- has_many :groups
 - has_many :messages
 
 ## groupsテーブル
