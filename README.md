@@ -16,7 +16,7 @@
 
 |column|type|Options|
 |------|----|-------|
-|group_name|string|null: false|
+|name|string|null: false|
 
 ## Association
 has_many :users
