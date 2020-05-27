@@ -41,16 +41,17 @@
     height: calc(100vh - 100px);
     .group{
       margin: 0 20px;
-      color: white;
       font-weight: bold;
       &__name{
         font-size: 15px;
         padding-top: 20px;
+        color:white;
+        
       }
       &__massage{
         font-size: 11px;
         padding-top: 5px;
+        color: white;
       }
     }
-
   }

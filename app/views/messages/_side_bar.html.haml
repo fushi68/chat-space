@@ -4,17 +4,15 @@
       %p.header__items--name
         = current_user.name
       .header__items--lists
-        = link_to "#", class: "btn" do
-          = icon('fas', 'edit', class: "icon")   
+        = link_to new_group_path, class: "btn" do
+          = icon('fas', 'edit', class: "icon")
         = link_to edit_user_path(current_user), class: "btn" do
           = icon('fas', 'cog', class: "icon")
   .groups
-    .group
-      .group__name
-        techcamp
-      .group__massage
-        まだメッセージがありません
-      .group__name
-        techcamp
-      .group__massage
-        まだメッセージがありません  
+    - current_user.groups.each do |group|
+      .group
+        = link_to '#' do
+          .group__name
+            = group.name
+          .group__massage
+            メッセージはありません
