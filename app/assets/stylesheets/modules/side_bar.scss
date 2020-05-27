@@ -1,0 +1,56 @@
+.side-bar{
+  float:left;
+  width: 300px;
+  height: 100vh;
+}
+  .header{
+    height: 100px;
+    background-color: #253141;
+    display: flex;
+    align-items: center;
+    &__items{
+      background-color: #253141;
+      width: 300px;
+      height: 20px;
+      margin:  0 20px;
+      display: flex;
+      justify-content: space-between;
+      &--name{
+        color: white;
+        font-weight: bold;
+      }
+      &--lists{
+        width: 60px;
+        display: inline-block;
+        display: flex;
+        justify-content: flex-end;
+        .btn{
+          display: inline-block;
+          .icon{
+            padding-left: 5px;
+            text-decoration: none;
+            color: white;
+          }
+        }  
+      }
+    }
+  }
+
+  .groups{
+    background-color: #2f3e51;
+    height: calc(100vh - 100px);
+    .group{
+      margin: 0 20px;
+      color: white;
+      font-weight: bold;
+      &__name{
+        font-size: 15px;
+        padding-top: 20px;
+      }
+      &__massage{
+        font-size: 11px;
+        padding-top: 5px;
+      }
+    }
+
+  }
