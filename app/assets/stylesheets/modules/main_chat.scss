@@ -6,6 +6,7 @@
   .chat-main__group{
     height: 100px;
     background-color: #ffffff;
+    border-bottom:1px solid #eeeeee;
     &--info{
       display: flex;
       justify-content: space-between;
@@ -43,12 +44,11 @@
     overflow: scroll;
     .chat{
       margin: 0 40px;
-      padding-top: 35px;
-      
       &__name{
         color: #333333;
         font-size: 16px;
         padding-bottom: 12px;
+        padding-top: 35px;
         display: flex;
       }
         &__date{
@@ -60,7 +60,7 @@
       &__message{
         color: #434a54;
         font-size: 14px;
-        padding-bottom: 46px;
+        padding-bottom: 11px;
       }
     }
   }
